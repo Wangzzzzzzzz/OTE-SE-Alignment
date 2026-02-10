@@ -1,0 +1,84 @@
+
+MCF - E100
+================================================================================
+                   Model              Method        EFF        Gen        Spe         Flu        Con
+  Meta_Llama_3_8B_Instru MEMIT_seq_prune_err 99.87±0.03 94.91±0.22 79.90±0.20 628.03±0.38 33.41±0.19
+ Meta_Llama_3_8B_Instruc  MEMIT_seq_rect_err 99.88±0.08 94.34±0.09 81.56±0.22 628.75±0.21 33.22±0.13
+Meta_Llama_3_8B_Instruct           AlphaEdit 98.92±0.12 93.93±0.80 68.57±0.74 621.85±0.95 32.31±0.15
+Meta_Llama_3_8B_Instruct           MEMIT_seq 99.85±0.08 95.29±0.19 79.98±0.09 626.63±0.75 33.31±0.20
+     Qwen2_5_7B_Instruct           AlphaEdit 99.83±0.05 92.21±0.40 83.06±0.23 625.30±0.04 32.09±0.13
+     Qwen2_5_7B_Instruct           MEMIT_seq 99.82±0.02 92.84±1.17 82.64±0.18 624.81±0.28 31.74±0.03
+     Qwen2_5_7B_Instruct MEMIT_seq_prune_err 99.78±0.02 91.85±1.12 82.25±0.10 625.00±0.14 31.58±0.14
+     Qwen2_5_7B_Instruct  MEMIT_seq_rect_err 99.72±0.02 91.30±0.66 82.80±0.23 625.04±0.14 31.76±0.04
+                 gpt2_xl           AlphaEdit 99.53±0.10 94.10±0.32 66.50±0.25 597.86±1.93 39.19±0.38
+                 gpt2_xl           MEMIT_seq 99.05±0.08 93.46±0.17 64.46±0.38 571.72±5.12 35.93±0.64
+                 gpt2_xl MEMIT_seq_prune_err 99.32±0.10 93.95±0.41 65.04±0.35 583.82±1.67 37.36±0.31
+                 gpt2_xl  MEMIT_seq_rect_err 99.15±0.25 93.82±0.25 66.29±0.13 588.71±6.60 37.89±0.75
+                gpt_j_6b           AlphaEdit 99.73±0.07 96.03±0.20 75.49±0.15 617.73±0.44 41.95±0.26
+                gpt_j_6b           MEMIT_seq 99.82±0.05 96.51±0.18 74.92±0.34 616.39±1.35 41.79±0.30
+                gpt_j_6b MEMIT_seq_prune_err 99.83±0.05 96.16±0.40 74.77±0.15 617.04±1.11 42.05±0.12
+                gpt_j_6b  MEMIT_seq_rect_err 99.78±0.02 95.69±0.30 76.71±0.21 620.73±0.17 41.92±0.10
+
+
+MCF - E2000
+================================================================================
+                   Model              Method        EFF        Gen        Spe         Flu        Con
+Meta_Llama_3_8B_Instruct           AlphaEdit 95.30±0.12 77.12±0.29 87.37±0.11 632.04±0.19 29.96±0.06
+Meta_Llama_3_8B_Instruct           MEMIT_seq 99.80±0.05 88.33±0.25 87.50±0.07 632.76±0.38 32.08±0.11
+Meta_Llama_3_8B_Instruct MEMIT_seq_prune_err 99.57±0.17 86.80±0.44 87.41±0.09 632.28±0.60 31.70±0.06
+Meta_Llama_3_8B_Instruct  MEMIT_seq_rect_err 83.23±1.33 59.41±0.96 88.69±0.12 634.34±0.22 27.99±0.20
+     Qwen2_5_7B_Instruct           AlphaEdit 99.88±0.08 94.03±0.52 83.38±0.09 625.12±0.16 32.73±0.16
+     Qwen2_5_7B_Instruct           MEMIT_seq 99.88±0.03 94.41±0.99 83.20±0.06 625.26±0.04 32.91±0.23
+     Qwen2_5_7B_Instruct MEMIT_seq_prune_err 99.82±0.05 94.30±0.34 83.30±0.25 625.10±0.24 32.70±0.28
+     Qwen2_5_7B_Instruct  MEMIT_seq_rect_err 99.12±0.17 86.45±0.43 84.57±0.01 625.57±0.15 31.84±0.04
+                 gpt2_xl           AlphaEdit 99.57±0.08 92.72±0.17 69.40±0.21 617.77±0.36 41.35±0.29
+                 gpt2_xl           MEMIT_seq 99.22±0.02 92.19±0.36 70.97±0.25 623.37±0.06 41.26±0.09
+                 gpt2_xl MEMIT_seq_prune_err 99.23±0.10 91.96±0.23 71.09±0.20 623.39±0.35 41.23±0.23
+                 gpt2_xl  MEMIT_seq_rect_err 95.12±0.20 79.13±0.43 75.04±0.16 626.95±0.57 38.96±0.09
+                gpt_j_6b           AlphaEdit 99.77±0.05 94.56±0.40 78.79±0.12 619.70±0.44 41.09±0.11
+                gpt_j_6b           MEMIT_seq 99.83±0.02 94.34±0.34 79.13±0.11 620.66±1.13 41.03±0.39
+                gpt_j_6b MEMIT_seq_prune_err 99.80±0.00 94.17±0.32 79.34±0.05 621.28±0.18 40.95±0.02
+                gpt_j_6b  MEMIT_seq_rect_err 98.27±0.48 77.26±0.37 81.31±0.04 622.26±0.13 37.64±0.07
+
+
+ZSRE - E100
+================================================================================
+                   Model              Method        EFF        Gen        Spe
+Meta_Llama_3_8B_Instruct           AlphaEdit 94.53±0.07 90.80±0.39 32.54±0.14
+Meta_Llama_3_8B_Instruct           MEMIT_seq 95.55±0.09 91.63±0.20 32.42±0.09
+Meta_Llama_3_8B_Instruct MEMIT_seq_prune_err 95.67±0.07 91.52±0.50 32.42±0.07
+Meta_Llama_3_8B_Instruct  MEMIT_seq_rect_err 95.71±0.17 91.58±0.52 32.27±0.44
+     Qwen2_5_7B_Instruct           AlphaEdit 99.24±0.16 91.46±0.62 42.13±0.55
+     Qwen2_5_7B_Instruct           MEMIT_seq 99.18±0.09 92.07±0.23 43.05±0.18
+     Qwen2_5_7B_Instruct MEMIT_seq_prune_err 99.21±0.14 91.90±1.00 42.48±1.44
+     Qwen2_5_7B_Instruct  MEMIT_seq_rect_err 99.11±0.27 91.43±0.86 42.29±0.24
+                 gpt2_xl           AlphaEdit 93.42±0.88 84.83±1.20 25.67±0.22
+                 gpt2_xl           MEMIT_seq 95.26±0.30 88.39±0.90 26.34±0.47
+                 gpt2_xl MEMIT_seq_prune_err 95.15±0.19 87.98±0.50 26.16±0.39
+                 gpt2_xl  MEMIT_seq_rect_err 95.46±0.27 87.89±0.74 26.33±0.44
+                gpt_j_6b           AlphaEdit 99.60±0.03 96.00±0.77 28.58±0.09
+                gpt_j_6b           MEMIT_seq 99.67±0.06 96.63±0.03 28.38±0.30
+                gpt_j_6b MEMIT_seq_prune_err 99.67±0.04 95.89±0.47 28.44±0.42
+                gpt_j_6b  MEMIT_seq_rect_err 99.62±0.08 95.89±0.34 28.17±0.42
+
+
+ZSRE - E2000
+================================================================================
+                   Model              Method        EFF        Gen        Spe
+Meta_Llama_3_8B_Instruct           AlphaEdit 87.30±0.76 83.46±0.71 32.53±0.04
+Meta_Llama_3_8B_Instruct           MEMIT_seq 93.22±0.60 88.63±0.20 32.23±0.16
+Meta_Llama_3_8B_Instruct MEMIT_seq_prune_err 92.15±0.69 88.32±0.20 32.55±0.20
+Meta_Llama_3_8B_Instruct  MEMIT_seq_rect_err 78.90±0.40 72.49±0.41 32.34±0.09
+     Qwen2_5_7B_Instruct           AlphaEdit 96.89±0.08 91.35±0.05 39.14±0.76
+     Qwen2_5_7B_Instruct           MEMIT_seq 96.79±0.47 92.00±0.35 40.82±0.46
+     Qwen2_5_7B_Instruct MEMIT_seq_prune_err 96.44±0.36 91.66±1.36 41.32±0.57
+     Qwen2_5_7B_Instruct  MEMIT_seq_rect_err 93.50±0.57 84.50±0.08 40.28±0.15
+                 gpt2_xl           AlphaEdit 88.61±0.46 80.31±0.59 25.05±0.27
+                 gpt2_xl           MEMIT_seq 89.26±1.33 81.45±0.96 25.66±0.33
+                 gpt2_xl MEMIT_seq_prune_err 89.58±1.38 81.81±1.67 25.76±0.21
+                 gpt2_xl  MEMIT_seq_rect_err 71.57±0.42 63.50±0.46 25.79±0.07
+                gpt_j_6b           AlphaEdit 99.27±0.09 94.82±0.72 27.46±0.20
+                gpt_j_6b           MEMIT_seq 99.23±0.39 94.81±0.56 27.47±0.30
+                gpt_j_6b MEMIT_seq_prune_err 98.90±0.13 94.04±0.47 27.82±0.26
+                gpt_j_6b  MEMIT_seq_rect_err 82.53±1.63 72.12±2.87 27.74±0.20
+

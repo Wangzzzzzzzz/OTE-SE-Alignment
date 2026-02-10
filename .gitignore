@@ -1,0 +1,11 @@
+*.json
+**/results
+**/data
+*.pyc
+*.pt
+*.bsub
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.stdout
